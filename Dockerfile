@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:latest
 
-ENV ELIXIR_VERSION 1.2.2
+ENV ELIXIR_VERSION 1.2.4
 
 RUN apk --update add erlang \
                      erlang-crypto \
