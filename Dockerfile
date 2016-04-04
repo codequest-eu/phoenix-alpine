@@ -2,7 +2,8 @@ FROM mhart/alpine-node:latest
 
 ENV ELIXIR_VERSION 1.2.4
 
-RUN apk --update add erlang \
+RUN apk --update add build-base \
+                     erlang \
                      erlang-crypto \
                      erlang-syntax-tools \
                      erlang-parsetools \
@@ -14,10 +15,10 @@ RUN apk --update add erlang \
                      erlang-sasl \
                      erlang-erl-interface \
                      erlang-dev \
+                     git \
                      inotify-tools \
                      postgresql-client \
-                     wget \
-                     git &&\
+                     wget &&\
     rm -rf /var/cache/apk/*
 
 RUN apk --update add --virtual build-dependencies wget ca-certificates && \
