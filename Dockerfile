@@ -1,6 +1,6 @@
 FROM mhart/alpine-node:latest
 
-ENV ELIXIR_VERSION 1.2.4
+ENV ELIXIR_VERSION 1.3.2
 
 RUN apk --update add build-base \
                      ca-certificates \
